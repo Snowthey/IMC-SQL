@@ -115,7 +115,7 @@ public class ConexaoBancoDeDados {
                     double imc = resultadoconsultaBD.getDouble("IMC");
                     int id = resultadoconsultaBD.getInt("id");
 
-                    String resultado = String.format("# ID: %d Nome: %s Altura: %.2f Peso: %.2f IMC: %.2f", id, nome, altura, peso, imc);
+                    String resultado = String.format("# ID: %d Nome: %s Altura: %.2f Peso: %.2f IMC: %.2f \n -------------------------------------------------------------------------------------", id, nome, altura, peso, imc);
                     relatorioBancoDeDados.add(resultado);
                 }
 

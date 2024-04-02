@@ -18,7 +18,6 @@ public class InterfaceGrafica extends JFrame implements ActionListener{
     private JButton btnRemover;
     private JButton btnListagem;
     private JLabel lblTitulo;
-    private JLabel lblSubTitulo;
     private JLabel lblNome;
     private JTextField txtNome;
     private JLabel lblPeso;
@@ -45,7 +44,6 @@ public class InterfaceGrafica extends JFrame implements ActionListener{
         ctn.setLayout(null);
 
         lblTitulo = new JLabel("IMC");
-        lblSubTitulo = new JLabel("Indice de Massa Corporal");
         lblNome = new JLabel("Nome");
         txtNome = new JTextField();
         lblPeso = new JLabel("Peso");
@@ -69,10 +67,8 @@ public class InterfaceGrafica extends JFrame implements ActionListener{
         lblResultadoPesquisa = new JLabel("Resultado da Pesquisa no Bando de Dados");
 
 
-        lblTitulo.setBounds(10, 10, 100, 55);
+        lblTitulo.setBounds(10, 10, 100, 50);
         lblTitulo.setFont(new Font("Arial", Font.PLAIN, 40));
-        lblSubTitulo.setBounds(10, 30, 250, 75);
-        lblSubTitulo.setFont(new Font("Arial", Font.PLAIN, 15));
         lblNome.setBounds(10, 80, 100, 25);
         txtNome.setBounds(50, 80, 250, 25);
         lblAltura.setBounds(10, 130, 100, 25);
@@ -98,7 +94,6 @@ public class InterfaceGrafica extends JFrame implements ActionListener{
         ctn.add(txtAltura);
         ctn.add(lblPeso);
         ctn.add(txtPeso);
-        ctn.add(lblSubTitulo);
         ctn.add(lblTitulo);
         ctn.add(btnRelatorio);
         ctn.add(btnCadastrar);
