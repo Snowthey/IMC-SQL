@@ -137,10 +137,8 @@ public class InterfaceGrafica extends JFrame implements ActionListener{
 
             double imc = pessoa.calcularIMC();
 
-            // Atualiza o rótulo lblIMC com o IMC calculado
             lblIMC.setText("Seu IMC é: " + String.format("%.2f", imc));
 
-            // Verifica o IMC e atualiza o rótulo lblMSG de acordo com as condições
             if (imc >= 18.5 && imc <= 25) {
                 lblMSG.setText("Você está no peso ideal.");
             } else if (imc > 25) {

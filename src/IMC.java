@@ -8,7 +8,7 @@ public class IMC {
         this.nome = nome;
         this.altura = altura;
         this.peso = peso;
-        this.imc = calcularIMC(); // Remova os parâmetros aqui
+        this.imc = calcularIMC();
     }
 
     public IMC(String nome, double altura, double peso, double imc) {
